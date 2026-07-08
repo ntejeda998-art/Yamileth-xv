@@ -8,13 +8,19 @@
 <title>XV Años | Yamileth</title>
 
 <link rel="stylesheet" href="style.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+<audio id="musica" loop>
+<source src="music/IfOnly.mp3" type="audio/mpeg">
+</audio>
 
 <section class="inicio">
 
@@ -22,20 +28,106 @@
 
 <div class="contenido">
 
-<h2>Mis XV Años</h2>
+<h3>Mis XV Años</h3>
 
 <h1>Yamileth</h1>
 
-<p class="frase">
-Con inmensa alegría deseo compartir contigo
-uno de los momentos más importantes de mi vida.
+<p>
+Hay momentos en la vida que son únicos e inolvidables.
+Con la bendición de Dios y el amor de mi familia,
+quiero compartir contigo este día tan especial.
 </p>
 
-<button id="entrar">
-Entrar a la invitación
+<button onclick="document.getElementById('informacion').scrollIntoView({behavior:'smooth'})">
+Ver Invitación
 </button>
 
 </div>
+
+</section>
+
+<section id="informacion" class="info">
+
+<h2>15 de Agosto</h2>
+
+<div class="datos">
+
+<h3>Ceremonia Religiosa</h3>
+
+<p>
+📍 Parroquia del Espíritu Santo<br>
+🕖 7:00 PM (Estado de México)
+</p>
+
+<a href="https://maps.app.goo.gl/DAFXTLwtfdEG7A7bA?g_st=aw" target="_blank">
+Ver ubicación
+</a>
+
+<br><br>
+
+<h3>Recepción</h3>
+
+<p>
+📍 Salón Coliga<br>
+🕣 8:30 PM
+</p>
+
+<a href="https://maps.app.goo.gl/pzNvV68jUk1FbgSd7?g_st=aw" target="_blank">
+Ver ubicación
+</a>
+
+<br><br>
+
+<h3>Mis padres</h3>
+
+<p>
+Sandra Gabriela Tejeda Bernal<br>
+Luis Adrián Ramos Orduña
+</p>
+
+<h3>Mis padrinos</h3>
+
+<p>
+Luis Eduardo Tejada Bernal<br>
+Rebeca Atzin Berrocal Navarro
+</p>
+
+</div>
+
+  </section><section class="contador">
+
+<h2>Faltan...</h2>
+
+<div id="cuentaRegresiva"></div>
+
+</section>
+
+<section class="galeria">
+
+<h2>Galería</h2>
+
+<div class="fotos">
+
+<img src="images/IMG-20260630-WA0127.jpg" alt="">
+<img src="images/IMG-20260630-WA0136.jpg" alt="">
+<img src="images/IMG-20260630-WA0153.jpg" alt="">
+<img src="images/IMG-20260630-WA0155.jpg" alt="">
+
+</div>
+
+</section>
+
+<section class="confirmacion">
+
+<h2>¿Nos acompañas?</h2>
+
+<p>
+Confirma tu asistencia antes del <b>5 de agosto</b>.
+</p>
+
+<button onclick="confirmarAsistencia()">
+Confirmar por WhatsApp
+</button>
 
 </section>
 
